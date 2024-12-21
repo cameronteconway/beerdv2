@@ -36,16 +36,16 @@ export default function Header() {
 	const pathname = usePathname();
 
 	return (
-		<NavigationMenu className='fixed left-0 right-0 top-[17px] mx-auto hidden rounded-full bg-background lg:block'>
+		<NavigationMenu className='fixed left-0 right-0 bottom-7 sm:bottom-auto sm:top-[17px] mx-auto rounded-full bg-white'>
 			<NavigationMenuList className='rounded-full border border-input p-[6px]'>
 				<NavigationMenuItem>
 					<Link href='/' legacyBehavior passHref>
 						<NavigationMenuLink
 							aria-label='Go to homepage'
 							active={pathname === "/" ? true : false}
-							className='group inline-flex h-8 w-max items-center justify-center rounded-full bg-background px-4 py-1 text-sm font-medium transition-colors hover:bg-accent hover:text-secondary focus:bg-accent focus:text-secondary focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-primary data-[state=open]:bg-accent/50'
+							className='group inline-flex h-8 w-max items-center justify-center rounded-full bg-white px-4 py-1 text-sm font-medium transition-colors hover:bg-accent hover:text-secondary focus:bg-accent focus:text-secondary focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-primary data-[state=open]:bg-accent/50'
 						>
-							Home
+							Beers
 						</NavigationMenuLink>
 					</Link>
 				</NavigationMenuItem>
@@ -58,40 +58,9 @@ export default function Header() {
 									? true
 									: false
 							}
-							className='group inline-flex h-8 w-max items-center justify-center rounded-full bg-background px-4 py-1 text-sm font-medium transition-colors hover:bg-accent hover:text-secondary focus:bg-accent focus:text-secondary focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-primary data-[state=open]:bg-accent/50'
+							className='group inline-flex h-8 w-max items-center justify-center rounded-full bg-white px-4 py-1 text-sm font-medium transition-colors hover:bg-accent hover:text-secondary focus:bg-accent focus:text-secondary focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-primary data-[state=open]:bg-accent/50'
 						>
-							Beers
-						</NavigationMenuLink>
-					</Link>
-				</NavigationMenuItem>
-				<NavigationMenuItem>
-					<Link href='/types' legacyBehavior passHref>
-						<NavigationMenuLink
-							aria-label='See all types'
-							active={
-								pathname === "/types" || pathname.split("/")[1] === "types"
-									? true
-									: false
-							}
-							className='group inline-flex h-8 w-max items-center justify-center rounded-full bg-background px-4 py-1 text-sm font-medium transition-colors hover:bg-accent hover:text-secondary focus:bg-accent focus:text-secondary focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-primary data-[state=open]:bg-accent/50'
-						>
-							Types
-						</NavigationMenuLink>
-					</Link>
-				</NavigationMenuItem>
-				<NavigationMenuItem>
-					<Link href='/countries' legacyBehavior passHref>
-						<NavigationMenuLink
-							aria-label='See all countries'
-							active={
-								pathname === "/countries" ||
-								pathname.split("/")[1] === "countries"
-									? true
-									: false
-							}
-							className='group inline-flex h-8 w-max items-center justify-center rounded-full bg-background px-4 py-1 text-sm font-medium transition-colors hover:bg-accent hover:text-secondary focus:bg-accent focus:text-secondary focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-primary data-[state=open]:bg-accent/50'
-						>
-							Countries
+							Add Beer
 						</NavigationMenuLink>
 					</Link>
 				</NavigationMenuItem>
@@ -106,7 +75,7 @@ export default function Header() {
                                         ? true
                                         : false
                                 }
-                                className='group inline-flex h-8 w-max items-center justify-center rounded-full bg-background px-4 py-1 text-sm font-medium transition-colors hover:bg-accent hover:text-secondary focus:bg-accent focus:text-secondary focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-primary data-[state=open]:bg-accent/50'
+                                className='group inline-flex h-8 w-max items-center justify-center rounded-full bg-white px-4 py-1 text-sm font-medium transition-colors hover:bg-accent hover:text-secondary focus:bg-accent focus:text-secondary focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-primary data-[state=open]:bg-accent/50'
                             >
                                 Account
                             </NavigationMenuLink>
@@ -123,7 +92,7 @@ export default function Header() {
                                         ? true
                                         : false
                                 }
-                                className='group inline-flex h-8 w-max items-center justify-center rounded-full bg-background px-4 py-1 text-sm font-medium transition-colors hover:bg-accent hover:text-secondary focus:bg-accent focus:text-secondary focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-primary data-[state=open]:bg-accent/50'
+                                className='group inline-flex h-8 w-max items-center justify-center rounded-full bg-white px-4 py-1 text-sm font-medium transition-colors hover:bg-accent hover:text-secondary focus:bg-accent focus:text-secondary focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-primary data-[state=open]:bg-accent/50'
                             >
                                 Login
                             </NavigationMenuLink>
@@ -132,7 +101,7 @@ export default function Header() {
                 )} */}
 				<NavigationMenuItem>
 					<NavigationMenuLink
-						className='group inline-flex h-8 w-max items-center justify-center rounded-full bg-background py-1 text-sm font-medium transition-colors hover:bg-accent hover:text-secondary focus:bg-accent focus:text-secondary focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-primary data-[state=open]:bg-accent/50'
+						className='group inline-flex h-8 w-max items-center justify-center rounded-full bg-white py-1 text-sm font-medium transition-colors hover:bg-accent hover:text-secondary focus:bg-accent focus:text-secondary focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-primary data-[state=open]:bg-accent/50'
 						aria-label='Open search'
 					>
 						<Button

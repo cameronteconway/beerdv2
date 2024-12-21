@@ -26,10 +26,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={`${inter.variable} antialiased`}>
+			<body className={`${inter.variable} antialiased bg-background`}>
 				<Header />
 				<main className='mx-auto max-w-screen-lg px-4 md:px-6'>{children}</main>
-				<script src='https://accounts.google.com/gsi/client' async></script>
 			</body>
 		</html>
 	);
